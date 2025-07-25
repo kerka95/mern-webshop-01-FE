@@ -1,0 +1,35 @@
+.app {
+  &__btn {
+    display: inline-block;
+    width: 100%;
+    min-width: 180px;
+    max-width: max-content;
+    padding: 16px 14px;
+    border-radius: 24px;
+    border: none;
+    outline: 4px solid transparent;
+    background-color: var(--primary-color-01);
+    color: var(--white-01);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    &--primary {
+    }
+
+    &--secondary {
+    }
+
+    &--tertiary {
+    }
+
+    &:hover {
+    }
+
+    &:focus {
+    }
+    
+    &:focus-visible {
+    }
+  }
+}
