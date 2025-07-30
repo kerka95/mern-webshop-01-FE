@@ -1,0 +1,41 @@
+.app {
+  &__link {
+    max-width: max-content;
+    position: relative;
+    font-weight: 800;
+    transition: all 0.3s ease;
+    color: var(--primary-color-03);
+
+    &:hover {
+      color: var(--primary-color-02);
+    }
+
+    &:visited {
+    }
+
+    &--with-arrow {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      text-decoration: none;
+      color: var(--primary-color-02);
+
+      &::after {
+        position: relative;
+        top: 50%;
+        transform: translate3d(0, -50%, 0);
+        content: url("/src/assets/icons/links/arrow-right.svg");
+        line-height: 1;
+        transition: all 0.3s ease;
+      }
+
+      &:hover {
+        color: var(--primary-color-01);
+
+        &::after {
+          transform: translate3d(6px, -50%, 0);
+        }
+      }
+    }
+  }
+}

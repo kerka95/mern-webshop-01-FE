@@ -1,0 +1,126 @@
+@use "./forwards" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  color: var(--primary-text-color-01);
+  background-color: var(--white-01);
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  box-sizing: border-box;
+  hyphens: auto;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 100%; // 1rem (16px)
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 130%;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--black-02);
+  font-weight: 900;
+  line-height: 150%;
+  font-style: italic;
+  margin-bottom: toRem(8px);
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: toRem(32px);
+
+  @include media-breakpoint-up(md) {
+    font-size: toRem(36px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: toRem(40px);
+  }
+}
+
+h2 {
+  font-size: toRem(28px);
+
+  @include media-breakpoint-up(md) {
+    font-size: toRem(32px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: toRem(36px);
+  }
+}
+
+h3 {
+  font-size: toRem(24px);
+
+  @include media-breakpoint-up(md) {
+    font-size: toRem(28px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: toRem(32px);
+  }
+}
+
+h4 {
+  font-size: toRem(22px);
+
+  @include media-breakpoint-up(md) {
+    font-size: toRem(24px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: toRem(28px);
+  }
+}
+
+h5 {
+  font-size: toRem(20px);
+
+  @include media-breakpoint-up(md) {
+    font-size: toRem(22px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: toRem(26px);
+  }
+}
+
+h6 {
+  font-size: toRem(18px);
+
+  @include media-breakpoint-up(md) {
+    font-size: toRem(20px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: toRem(24px);
+  }
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}

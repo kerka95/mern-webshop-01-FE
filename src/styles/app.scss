@@ -1,0 +1,16 @@
+@use "./forwards" as *;
+
+.app-container {
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 40px 16px;
+
+  @include media-breakpoint-up(md) {
+    padding: 68px 150px;
+  }
+
+  &__wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}

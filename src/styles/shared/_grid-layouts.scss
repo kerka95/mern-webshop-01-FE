@@ -1,0 +1,13 @@
+@use './breakpoints' as *;
+
+.app-grid {
+  &__layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+
+    @include media-breakpoint-up(md) {
+        gap: 40px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@use './functions' as *;
+
+.app {
+  &__dl-list {
+    display: grid;
+    gap: 16px;
+
+    &-title {
+      font-weight: 800;
+      margin: 0 0 4px 0;
+    }
+
+    &-desc {
+      font-size: toRem(14px);
+    }
+  }
+}
